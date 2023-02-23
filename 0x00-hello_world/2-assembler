@@ -1,0 +1,2 @@
+#/bin/bash
+gcc -S $CFILE > $(printenv CFILE | cut -d "." -f1).s
