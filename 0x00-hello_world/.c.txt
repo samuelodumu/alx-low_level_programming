@@ -1,4 +1,0 @@
-0-preprocessor
-1-compiler
-c.txt
-README.md
