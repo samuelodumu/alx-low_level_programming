@@ -12,11 +12,11 @@ int main(void)
 	char alpha[] = "abcdefghijklmnopqrstuvwxyz";
 	char ALPHA[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-	for (count = 0; count < 27; count++)
+	for (count = 0; count < 26; count++)
 	{
 		putchar(alpha[count]);
 	}
-	for (count = 0; count <= 27; count++)
+	for (count = 0; count < 27; count++)
 	{
 		if (ALPHA[count] == 0)
 		{
