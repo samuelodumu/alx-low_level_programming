@@ -11,9 +11,9 @@ int main(void)
 	int count = 0;
 	char alfa[] = "abcdfghijklmnoprstuvwxyz";
 
-	for (count = 0; count < 26; count++)
+	for (count = 0; count < 25; count++)
 	{
-		if (count == 25)
+		if (count == 24)
 		{
 			putchar('\n');
 			break;
