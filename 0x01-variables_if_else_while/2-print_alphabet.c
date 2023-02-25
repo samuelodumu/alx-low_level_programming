@@ -9,7 +9,7 @@
 int main(void)
 {
 	int count = 0;
-	char alpha[] = "abcdefghijklmnopqrstwxyz";
+	char alpha[] = "abcdefghijklmnopqrstuvwxyz";
 
 	for (count = 0; count < 28; count++)
 	{
