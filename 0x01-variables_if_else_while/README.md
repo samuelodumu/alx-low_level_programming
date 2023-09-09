@@ -1,4 +1,4 @@
-# C_-_variables_if_else
+# 0x01.C - variables, if, else, while
 
 My answers to the C Variables project.
 
