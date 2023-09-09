@@ -34,10 +34,7 @@ int main(void)
 				putchar('0' + num1 % 10);
 
 				putchar(' ');
-				if (num2 < 10)
-				{
-					putchar('0');
-				}
+
 				putchar('0' + num2 / 10);
 				putchar('0' + num2 % 10);
 
