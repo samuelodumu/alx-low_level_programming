@@ -9,17 +9,16 @@
  */
 int main(void)
 {
-	int num;
+	int num, i;
+	char arr[2] = ", ";
 
-	for (num = 48; num < 58; num++)
+	for (num = 48; num < 57; num++)
 	{
 		putchar(num);
-		if (num != 57)
-		{
-			putchar(',');
-			putchar(' ');
-		}
+		for (i = 0; i <=2; i++)
+			putchar(arr[i]);
 	}
+	putchar(num);
 	putchar('\n');
 	return (0);
 }
