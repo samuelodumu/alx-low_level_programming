@@ -41,11 +41,11 @@ int main(void)
 				putchar('0' + num2 / 10);
 				putchar('0' + num2 % 10);
 
-		if (num1 != 99 || num2 != 99)
-		{
-			putchar(',');
-			putchar(' ');
-		}
+				if (num1 != 99 || num2 != 99)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	}
