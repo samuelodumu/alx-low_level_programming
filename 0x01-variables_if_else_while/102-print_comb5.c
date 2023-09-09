@@ -26,15 +26,9 @@ int main(void)
 		{
 			if (!(num1 == 0 && num2 == 1) && !(num1 == 1 && num2 == 0))
 			{
-				if (num1 < 10)
-				{
-					putchar('0');
-				}
 				putchar('0' + num1 / 10);
 				putchar('0' + num1 % 10);
-
 				putchar(' ');
-
 				putchar('0' + num2 / 10);
 				putchar('0' + num2 % 10);
 
