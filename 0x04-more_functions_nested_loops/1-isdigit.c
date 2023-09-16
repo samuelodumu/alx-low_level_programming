@@ -1,15 +1,15 @@
 #include "main.h"
 
 /**
- * _isdigit -  checks for digit
+ * _isdigit - checks for digit
  * @c: the character to be checked
  *
  * Return: 1 if c is a digit, 0 otherwise
  */
 
-int _isdgit(int c)
+int _isdigit(int c)
 {
-	if (c >= 0 && c <= 9)
+	if (c >= 48 && c <= 57)
 		return (1);
 	else
 		return (0);
