@@ -1,0 +1,24 @@
+#include "main.h"
+
+/**
+ * _puts_recursion - prints a string
+ *
+ * @s: string to print
+ */
+
+void _puts_recursion(char *s)
+{
+	if (*s < 1)
+	{
+		return;
+	}
+	_putchar(*s);
+	s++;
+	_puts_recursion(s);
+}
+
+int main(void)
+{
+    _puts_recursion("Puts with recursion");
+    return (0);
+}
