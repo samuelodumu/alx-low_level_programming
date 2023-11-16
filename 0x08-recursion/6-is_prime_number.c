@@ -43,7 +43,7 @@ int prime_number(int i, int n)
 {
 	int rem = n % i;
 
-	if (i < n/2)
+	if (i < n / 2)
 	{
 		if (rem != 0)
 		{
