@@ -10,7 +10,7 @@
 
 int is_prime_number(int n)
 {
-	int prime_number(int rem, int n);
+	int prime_number(int i, int n);
 
 	if (n <= 1)
 	{
