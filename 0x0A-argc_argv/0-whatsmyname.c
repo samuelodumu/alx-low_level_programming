@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
- * print_my_name - prints the first element of argv
+ * main - prints the first element of argv
  *
  * @argc: argument count
  * @argv: argument vector
