@@ -13,13 +13,14 @@
 
 int main(int argc, char *argv[])
 {
-	int i, result = 1;	
+	int i, result = 1;
 
 	if (argc == 3)
 	{
 		for (i = 1; i < argc; i++)
 		{
 			int x = strtol(argv[i], NULL, 10);
+
 			result *= x;
 		}
 
