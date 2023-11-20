@@ -26,7 +26,6 @@ int main(int argc, char *argv[])
 	else if (atoi(argv[1]) < 0)
 	{
 		printf("0\n");
-		return (0);
 	}
 	else
 	{
