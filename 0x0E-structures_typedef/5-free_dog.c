@@ -4,7 +4,6 @@
 /**
  * free_dog - frees struct dog
  *
- * @dog_t: struct dog
  * @d: pointer to struct dog
  */
 
