@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <string.h>
 #include "dog.h"
 
 /**
@@ -13,7 +14,18 @@
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	new_dog = malloc(sizeof(dog_t));
+	dog_t *dog;
 
-	strcpy(name);
+	dog = malloc(sizeof(dog_t));
 
+	if (dog == NULL)
+	{
+		return (NULL);
+	}
+
+	dog->name = strdup(name);
+	dog->owner = strdup(owner);
+	dog->age = age;
+
+	return (dog);
+}
