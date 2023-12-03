@@ -31,7 +31,8 @@ int main(int argc, char *argv[])
 		j = atoi(argv[3]);
 	}
 
-	if (((int)strcmp(argv[2], "/") == 0 || (int)strcmp(argv[2], "%") == 0) && j == 0)
+	if (((int)strcmp(argv[2], "/") == 0 || (int)strcmp(argv[2], "%") == 0)
+			&& j == 0)
 	{
 		printf("Error\n");
 		exit(100);
