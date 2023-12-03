@@ -29,10 +29,9 @@ int main(int argc, char *argv[])
 	{
 		i = atoi(argv[1]);
 		j = atoi(argv[3]);
-		get_op_func(argv[2])(i, j);
 	}
 
-	if ((strcmp(argv[2], "/") == 0 || strcmp(argv[2], "%") == 0) && j == 0)
+	if (((int)strcmp(argv[2], "/") == 0 || (int)strcmp(argv[2], "%") == 0) && j == 0)
 	{
 		printf("Error\n");
 		exit(100);
