@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
- * main - prints the number of elements in argv
+ * main - prints the number of elements passed to argv
  *
  * @argc: argument count
  * @argv: argument vector
