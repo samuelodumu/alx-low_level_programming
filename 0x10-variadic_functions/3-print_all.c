@@ -9,13 +9,37 @@ void print_all(const char * const format, ...)
 	while(format[i] != '\0')
 	{
 		if (format[i] == 'c') {
-			printf("%c, ", va_arg(ap, int));
+			print_char(va_arg(ap, int));
 		}
 		else if (format[i] == 'i') {
-			printf("%d, ", va_arg(ap, int));
+			print_integer(va_arg(ap, int));
 		}
 		else if (format[i] == 'f') {
-			printf("%f, ", va_arg(ap, int));
+			print_float(va_arg(ap, double));
+		}
+		else if (format[i] == 's') {
+			print_string(va_arg(ap, char *));
+		}
+		printf("\n");
+	}
+}
 
+void print_char(char c)
+{
+	printf("%c", c);
+}
 
-	}	
+void print_str(char *c)
+{
+	printf("%s", c);
+}
+
+void print_integer(int d)
+{
+	printf("%d", d);
+}
+
+void print_float(double d)
+{
+	printf("%f", d);
+}
