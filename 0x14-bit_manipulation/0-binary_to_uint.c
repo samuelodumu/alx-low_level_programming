@@ -27,7 +27,16 @@ unsigned int binary_to_uint(const char *b)
 	{
 		int bit = b[j] - '0';
 
-		result += bit * pow(2, i - j - 1);
+		result += bit * _pow(2, i - j - 1);
 	}
 	return (result);
+}
+
+int _pow(int x, int y)
+{
+	if (y == 0)
+		return (1);
+	if (y == 1)
+		return (x);
+	return (x * _pow(x, y - 1));
 }
