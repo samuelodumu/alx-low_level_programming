@@ -1,4 +1,5 @@
 #include "main.h"
+#include <limits.h>
 
 /**
  * main - check the code
@@ -15,7 +16,9 @@ int main(void)
     printf("\n");
     print_binary(1024);
     printf("\n");
-    print_binary((1 << 10) + 1);
+    print_binary(ULONG_MAX);
+    printf("\n");
+    print_binary(954372342312);
     printf("\n");
     return (0);
 }
