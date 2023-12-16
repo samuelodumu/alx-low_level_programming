@@ -11,13 +11,13 @@
 
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	unsigned int i, bit, num, count = 0;
+	unsigned long int i, bit, num, count = 0;
 
 	num = n ^ m;
 
 	if (n == 0 && n == 0)
 		return (0);
-	if (n == ULONG_MAX && m == 0)
+	if (num == ULONG_MAX)
 		return (sizeof(num) * 8);
 
 	for (i = 0; i < (sizeof(num) * 8); i++)
