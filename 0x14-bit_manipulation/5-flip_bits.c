@@ -17,7 +17,10 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 
 	if (n == 0 && n == 0)
 		return (0);
-	for (i = 0; i <= (sizeof(num) * 8); i++)
+	if (n == ULONG_MAX)
+		return (sizeof(num) * 8);
+
+	for (i = 0; i < (sizeof(num) * 8); i++)
 	{
 		bit = num & 1;
 		if (bit == 1)
