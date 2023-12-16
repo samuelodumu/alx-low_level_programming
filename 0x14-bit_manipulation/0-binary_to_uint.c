@@ -32,6 +32,13 @@ unsigned int binary_to_uint(const char *b)
 	return (result);
 }
 
+/**
+ * _pow - raises x to the power of y
+ * @x: first integer
+ * @y: second integer
+ * Return: x to the power of y
+ */
+
 int _pow(int x, int y)
 {
 	if (y == 0)
