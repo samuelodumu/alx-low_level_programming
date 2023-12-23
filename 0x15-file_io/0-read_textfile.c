@@ -14,7 +14,8 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	FILE *fp;
-	long unsigned int i;
+	char *buffer;
+	unsigned long int i;
 
 	if (filename == NULL)
 		return (0);
@@ -23,10 +24,9 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	for (i = 0; i < letters; i++)
 	{
-		_putchar(fgetc(fp));
-		fp++;
+		write(STDOUT_FILENO, (fgetc(fp)));
 	}
-	
+
 	fclose(fp);
 	return (i);
 }
