@@ -13,20 +13,29 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	FILE *fp;
+	int file_des, read_bytes, written_bytes;
 	char *buffer;
 	unsigned long int i;
 
 	if (filename == NULL)
 		return (0);
 
-	fp = fopen("filename", "r");
+	buffer = malloc(sizeof(char) * letters);
+	if (buffer == NULL)
+		return (0);
+	
+	file_des = open("filename", O_RDOONLY);
+	if (file_des == -1)
+		return (0);
 
-	for (i = 0; i < letters; i++)
-	{
-		write(STDOUT_FILENO, (fgetc(fp)));
-	}
+	read_bytes = read(file_des, buffer, letters);
+	if (read_bytes == -1)
+		return (0);
 
-	fclose(fp);
+	written_bytes = write(STDOUT_FILENO, buffer, bytes_read);
+	if (written_bytes == -1)
+		return (0);
+	
+	close(file_des);
 	return (i);
 }
